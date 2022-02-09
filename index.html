@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Reverse Number</title>
+</head>
+<body>
+<script>
+    let number = prompt('Nhập vào 1 số');
+    console.log(number)
+    let reverse = number;
+    let digit;
+    console.log('length =====', number.length);
+    for (let i = 0; i < number.length; i++) {
+        digit = reverse % 10;
+        console.log('digit----', digit);
+        reverse = Math.floor(reverse / 10);
+        console.log('reverser----', reverse);
+        document.write(digit);
+    }
+</script>
+</body>
+</html>
